@@ -1,0 +1,19 @@
+:root{
+    --grid-rows: 1;
+    --grid-colums: 1;
+}
+
+div{
+    background-color: white;
+    border: 1px solid gray;
+}
+
+#container{
+    background-color: white;
+    border: 0px;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-colums), auto);
+    grid-template-rows: repeat(var(--grid-rows), auto);
+}
